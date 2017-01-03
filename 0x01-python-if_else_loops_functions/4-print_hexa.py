@@ -1,4 +1,3 @@
 #!/usr/bin/python3
-number = range(0,99)
-for i in number:
-    print("{:d} = 0x{:x}".format(i, i))
+for n in range(0,99):
+    print("{:d} = 0x{:x}".format(n, n))
