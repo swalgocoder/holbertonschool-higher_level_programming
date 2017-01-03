@@ -1,0 +1,4 @@
+#!/bin/bash
+export PYCODE='print("Holberton School: {}".format(88+10))'
+python3 -c "$PYCODE"
+
