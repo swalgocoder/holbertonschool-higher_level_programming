@@ -3,7 +3,7 @@ if __name__ == "__main__":
     import sys
     from calculator_1 import add, sub, mul, div
     len = len(sys.argv)
-    if len < 3:
+    if len != 4:
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
         exit(1)
 
@@ -13,10 +13,10 @@ if __name__ == "__main__":
 a = int(sys.argv[1])
 b = int(sys.argv[3])
 if sys.argv[2] in ['+']:
-    print('{:d} + {:d} = {:d}'.format(a, b, add(a, b)))
+    print('{:d} {} {:d} = {:d}'.format(a, sys.argv[2], b, add(a, b)))
 if sys.argv[2] in ['-']:
-    print('{:d} - {:d} = {:d}'.format(a, b, sub(a, b)))
+    print('{:d} {} {:d} = {:d}'.format(a, sys.argv[2], b, sub(a, b)))
 if sys.argv[2] in ['*']:
-    print('{:d} * {:d} = {:d}'.format(a, b, mul(a, b)))
+    print('{:d} {} {:d} = {:d}'.format(a, sys.argv[2], b, mul(a, b)))
 if sys.argv[2] in ['/']:
-    print('{:d} / {:d} = {:d}'.format(a, b, div(a, b)))
+    print('{:d} {} {:d} = {:d}'.format(a, sys.argv[2], b, div(a, b)))
