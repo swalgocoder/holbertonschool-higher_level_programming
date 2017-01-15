@@ -6,8 +6,7 @@ def safe_print_list(my_list=[], x=0):
             print("{}".format(my_list[i]), end = "")
             nb_print += 1
         except IndexError:
-        # print("SomeError occurred")
-            pass
+            break
     print("")
-    return nb_print
+    return (nb_print)
         
