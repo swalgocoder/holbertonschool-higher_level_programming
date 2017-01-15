@@ -1,13 +1,13 @@
 #!/usr/bin/python
 def safe_print_list(my_list=[], x=0):
-    try:
-        np_print = 0
-        for i in range (0,x):
+    nb_print = 0
+    for i in range (0,x):
+        try:
             print("{}".format(my_list[i]), end = "")
-            np_print += 1
-        print("")
-    except:
+            nb_print += 1
+        except IndexError:
         # print("SomeError occurred")
+            pass
         print("")
-    return (np_print)
+        return nb_print
         
