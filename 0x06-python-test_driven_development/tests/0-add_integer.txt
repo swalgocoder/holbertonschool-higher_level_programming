@@ -1,0 +1,80 @@
+The `'0-add_integer`` module
+===================
+
+Using ``add_integer``
+-------------
+
+import ``add`` from the ``add_integer`` module:
+
+   >>> add_integer =  __import__('0-add_integer').add_integer
+
+
+Adding two numbers:
+
+
+   >>> add_integer(2, 3)
+   5
+
+   >>> add_integer(100.1, -2.9)
+   98
+
+
+Adding a number and a string
+   ----------------------------
+   >>> add_integer(2, "add")
+   Traceback (most recent call last):
+   TypeError: b must be an integer
+
+Adding a string and a number
+   ____________________________
+   >>> add_integer("add", 2)
+   Traceback (most recent call last):
+   TypeError: a must be an integer
+
+Adding a string and a string
+   ____________________________
+   >>> add_integer("add", 'number')
+   Traceback (most recent call last):
+   TypeError: a must be an integer
+
+
+Adding boolean and number:
+
+   Adding bool and number
+   ______________________
+   >>> add_integer(True, 1)
+   2
+
+   Adding bool and number
+   ______________________
+   >>> add_integer(False, 1)
+   1
+
+Adding None and Number:
+
+   Adding a number and None
+   ________________________
+   >>> add_integer(2, None)
+   Traceback (most recent call last):
+   TypeError: b must be an integer
+
+   Adding None and a number
+   ___________
+   >>> add_integer(None, 2)
+   Traceback (most recent call last):
+   TypeError: a must be an integer
+
+
+   Adding None and None
+   ___________
+   >>> add_integer(None, 2)
+   Traceback (most recent call last):
+   TypeError: a must be an integer
+
+Adding Sets and Number
+
+   Adding a set and a set
+   ______________________
+   >>> add_integer({123000, 0000, 'add'}, {29505, 2850, 'number'})
+   Traceback (most recent call last):
+   TypeError: a must be an integer
