@@ -10,7 +10,6 @@ def add_integer(a, b):
     Raise TypeError for every case that is not either an integer or a float.
     Float gets converted to an int.
     """
-
     if ((isinstance(a, (int, float))) and isinstance(b, (int, float))):
         a = int(a)
         b = int(b)
