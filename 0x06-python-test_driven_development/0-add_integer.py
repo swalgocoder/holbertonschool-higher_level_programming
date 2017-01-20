@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-testing adding two arguments,raising errors if their data types are not floats or ints.
+testing add_integer()
 """
 
 
