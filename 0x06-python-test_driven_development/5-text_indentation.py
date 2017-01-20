@@ -11,17 +11,17 @@ def text_indentation(text):
     if not isinstance(text, str):
         raise TypeError("text must be a string")
     spc_sym = 0
-    for i in text.strip():
-        if i == '.' or i == '?' or i == ':':
-            print("{:s}".format(i), end="")
+    for line in text.strip():
+        if line == '.' or line == '?' or line == ':':
+            print("{:s}".format(line), end="")
             print()
             print()
             spc_sym = 1
         else:
             if not spc_sym:
-                print("{:s}".format(i), end="")
+                print("{:s}".format(line), end="")
             else:
-                if i == ' ' or i == '\t':
+                if line == ' ' or line == '\t':
                     continue
-                print("{:s}".format(i), end="")
+                print("{:s}".format(line), end="")
                 spc_sym = 0
