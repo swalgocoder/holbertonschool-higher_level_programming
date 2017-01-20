@@ -1,0 +1,27 @@
+The test file for 'text_indentation' function in 5-text-indentation.py
+=========================================================================
+
+In the function, text:
+   -must be a string
+Otherwise, cast a TypeError with a 'text must be an string' message.
+
+The function prints out the string, adding 2 new lines after each '.', '?',
+and ':'.
+===============================================================
+
+    >>> text_indentation = __import__('5-text_indentation').text_indentation
+
+base cases:
+--------------------
+    >>> text_indentation("Hello, World!")
+    Hello, World!
+
+Testing other cases:
+-------------------------
+    >>> text_indentation(":?.")
+    :
+    <BLANKLINE>
+    ?
+    <BLANKLINE>
+    .
+    <BLANKLINE>
