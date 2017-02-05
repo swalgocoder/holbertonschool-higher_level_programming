@@ -5,5 +5,5 @@ text file (UTF8) read
 
 
 def read_file(filename=""):
-        f = open(filename, 'r')
-        print(f.read(), end="")
+        with open(filename, 'r') as f:
+            print(f.read(), end="")
